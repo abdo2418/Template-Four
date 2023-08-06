@@ -86,6 +86,12 @@
 .bg-blue {
   background-color: var(--blue-color);
 }
+.bg-orange {
+  background-color: var(--orange-color);
+}
+.bg-green {
+  background-color: var(--green-color);
+}
 .c-black {
   color: black;
 }
@@ -94,6 +100,15 @@
 }
 .c-white {
   color: white;
+}
+.c-blue {
+  color: var(--blue-color);
+}
+.c-orange {
+  color: var(--orange-color);
+}
+.c-green {
+  color: var(--green-color);
 }
 /* End Color  */
 /* Start Position */
@@ -109,6 +124,9 @@
   .txt-c-mobile {
     text-align: center;
   }
+}
+.fw-bold {
+  font-weight: bold;
 }
 .fs-14 {
   font-size: 14px;
@@ -128,11 +146,16 @@
   border: none;
 }
 /* End Border */
-/* Start Components  */
+/* Start Components */
+.center-flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .between-flex {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
 }
 .btn-shape {
   padding: 4px 10px;

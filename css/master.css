@@ -262,4 +262,57 @@ a {
   background-color: var(--blue-alt-color);
 }
 /* End Quick Widget */
+/* Start Yearly Widget */
+.yearly .icon {
+  width: 80px;
+  height: 80px;
+  margin-right: 15px;
+}
+.yearly .info {
+  flex: 1;
+}
+.yearly .info .progress {
+  height: 4px;
+}
+.yearly .info .progress > span {
+  height: 100%;
+}
+.yearly .info .progress > span > span {
+  position: absolute;
+  font-size: 13px;
+  top: -35px;
+  right: 0px;
+  transform: translateX(50%);
+  padding: 5px;
+}
+.yearly .info .progress > span > span::before {
+  content: "";
+  border: 5px solid;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.yearly .row.money .icon,
+.yearly .row.money .info .progress {
+  background-color: rgba(0, 119, 255, 0.200);
+}
+.yearly .row.code .icon,
+.yearly .row.code .info .progress  {
+  background-color: rgba(245, 159, 11, 0.200);
+}
+.yearly .row.team .icon,
+.yearly .row.team .info .progress {
+  background-color: rgba(34, 197, 94, 0.200);
+}
+.yearly .info .progress > span.money > span::before {
+  border-top-color: var(--blue-color);
+}
+.yearly .info .progress > span.code > span::before {
+  border-top-color: var(--orange-color);
+}
+.yearly .info .progress > span.team > span::before {
+  border-top-color: var(--green-color);
+}
+/* End Yearly Widget */
 /* End Content */
