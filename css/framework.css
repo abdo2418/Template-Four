@@ -17,6 +17,9 @@
 .space-between {
   justify-content: space-between;
 }
+.f-wrap {
+  flex-wrap: wrap;
+}
 .d-grid {
   display: grid;
 }
@@ -69,6 +72,9 @@
 .mt-20 {
   margin-top: 20px;
 }
+.mb-5 {
+  margin-bottom: 5px;
+}
 .mb-10 {
   margin-bottom: 10px;
 }
@@ -110,6 +116,9 @@
 .c-green {
   color: var(--green-color);
 }
+.c-red {
+  color: var(--red-color);
+}
 /* End Color  */
 /* Start Position */
 .p-relative {
@@ -128,12 +137,18 @@
 .fw-bold {
   font-weight: bold;
 }
+.fs-13 {
+  font-size: 13px;
+}
 .fs-14 {
   font-size: 14px;
 }
 .fs-15 {
   font-size: 15px;
 } 
+.fs-25 {
+  font-size: 25px;
+}
 /* End Font */
 /* Start Border */
 .rad-10 {
