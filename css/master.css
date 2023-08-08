@@ -326,4 +326,32 @@ a {
   }
 }
 /* End Tickets Widget  */
+/* Start Latest News Widget  */
+.latest .row:not(:last-child) {
+  border-bottom: 1px solid #eee;
+  padding-bottom: 20px;
+  margin-bottom: 15px;
+}
+.latest .row img {
+  width: 100px;
+  border-radius: 6px;
+  margin-right: 20px;
+}
+.latest .row .info {
+  flex: 1;
+}
+.latest .row .info h3 {
+  font-size: 16px;
+  margin: 0 0 6px;
+}
+@media (max-width: 767px) {
+  .latest .row {
+    display: block;
+  }
+  .latest .row .label {
+    margin: 10px auto;
+    width: fit-content;
+  }
+}
+/* End Latest News Widget  */
 /* End Content */
