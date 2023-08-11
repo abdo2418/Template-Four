@@ -376,4 +376,18 @@ a {
   text-decoration: line-through;
 }
 /* End Tasks Widget  */
+/* Start Uploads Widget */
+.uploads .row:not(:last-of-type) {
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eee;
+}
+.uploads .row img {
+  width: 40px;
+  margin-right: 10px;
+}
+.uploads .row .info {
+  flex-grow: 1;
+}
+/* End Uploads Widget */
 /* End Content */
