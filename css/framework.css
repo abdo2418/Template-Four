@@ -72,6 +72,9 @@
 .mt-20 {
   margin-top: 20px;
 }
+.mb-0 {
+  margin-bottom: 0;
+}
 .mb-5 {
   margin-bottom: 5px;
 }
@@ -145,6 +148,9 @@
 }
 .fs-15 {
   font-size: 15px;
+}
+.fs-16 {
+  font-size: 16px;
 } 
 .fs-25 {
   font-size: 25px;
@@ -176,5 +182,10 @@
   padding: 4px 10px;
   border-radius: 6px;
   cursor: pointer;
+}
+.widget-shape {
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
 }
 /* End Components  */

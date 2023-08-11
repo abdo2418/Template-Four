@@ -327,7 +327,7 @@ a {
 }
 /* End Tickets Widget  */
 /* Start Latest News Widget  */
-.latest .row:not(:last-child) {
+.latest .row:not(:last-of-type) {
   border-bottom: 1px solid #eee;
   padding-bottom: 20px;
   margin-bottom: 15px;
@@ -354,4 +354,25 @@ a {
   }
 }
 /* End Latest News Widget  */
+/* Stat Tasks Widget  */
+.tasks .row:not(:last-of-type) {
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #EEE;
+}
+.tasks .row .delete {
+  cursor: pointer;
+  transition-duration: 0.3s;
+}
+.tasks .row .delete:hover {
+  color: var(--red-color);
+}
+.tasks .done {
+  opacity: 0.3;
+}
+.tasks .done h3,
+.tasks .done p {
+  text-decoration: line-through;
+}
+/* End Tasks Widget  */
 /* End Content */
