@@ -81,6 +81,9 @@
 .mt-20 {
   margin-top: 20px;
 }
+.mt-25 {
+  margin-top: 25px;
+}
 .mr-10 {
   margin-right: 10px;
 }
@@ -92,6 +95,9 @@
 }
 .mb-10 {
   margin-bottom: 10px;
+}
+.mb-15 {
+  margin-bottom: 15px;
 }
 .mb-20 {
   margin-bottom: 20px;
@@ -172,11 +178,14 @@
 }
 /* End Font */
 /* Start Border */
+.rad-6 {
+  border-radius: 6px;
+}
 .rad-10 {
   border-radius: 10px;
 }
-.rad-6 {
-  border-radius: 6px;
+.rad-c {
+  border-radius: 50%;
 }
 .b-none {
   border: none;

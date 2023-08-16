@@ -390,4 +390,55 @@ a {
   flex-grow: 1;
 }
 /* End Uploads Widget */
+/* Start Project Progress Widget */
+.project-progress ul {
+  overflow: hidden;
+}
+.project-progress ul li > span {
+  width: 30px;
+  height: 30px;
+  border: 2px solid var(--blue-color);
+  margin-right: 15px;
+}
+.project-progress ul li:not(:last-of-type) > span::before {
+  content: '';
+  background-color: var(--blue-color);
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 50px;
+  width: 2px;
+}
+.project-progress ul li.done > span::after,
+.project-progress ul li.current > span::after {
+  content: '';
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background-color: var(--blue-color);
+  position: relative;
+}
+.project-progress ul li.current > span::after {
+  opacity: 0;
+  animation: hide-seek 1.6s ease-in-out infinite;
+}
+.project-progress .launch-icon {
+  width: 160px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  opacity: .1;
+}
+/* End Project Progress Widget */
 /* End Content */
+/* Start Animation */
+@keyframes hide-seek {
+  0%, 100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+/* End Animation */
