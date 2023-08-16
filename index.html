@@ -20,57 +20,59 @@
 <body>
   <div class="page d-flex">
     <div class="sidebar bg-white p-20 p-relative">
-      <h3 class="txt-c p-relative mt-0">Elzero</h3>
-      <ul class="p-0 list-none">
-        <li>
-          <a class="active d-flex align-center fs-14 c-black rad-6 p-10" href="index.html">
-            <i class="fa-regular fa-chart-bar fa-fw"></i>
-            <span class="hide-mobile">Dashboard</span>
-          </a>
-        </li>
-        <li>
-          <a class="d-flex align-center fs-14 c-black rad-6 p-10" href="index.html">
-            <i class="fa-solid fa-gear fa-fw"></i>
-            <span class="hide-mobile">Settings</span>
-          </a>
-        </li>
-        <li>
-          <a class="d-flex align-center fs-14 c-black rad-6 p-10" href="index.html">
-            <i class="fa-regular fa-user fa-fw"></i>
-            <span class="hide-mobile">Profile</span>
-          </a>
-        </li>
-        <li>
-          <a class="d-flex align-center fs-14 c-black rad-6 p-10" href="index.html">
-            <i class="fa-solid fa-diagram-project fa-fw"></i>
-            <span class="hide-mobile">Projects</span>
-          </a>
-        </li>
-        <li>
-          <a class="d-flex align-center fs-14 c-black rad-6 p-10" href="index.html">
-            <i class="fa-solid fa-graduation-cap fa-fw"></i>
-            <span class="hide-mobile">Courses</span>
-          </a>
-        </li>
-        <li>
-          <a class="d-flex align-center fs-14 c-black rad-6 p-10" href="index.html">
-            <i class="fa-regular fa-circle-user fa-fw"></i>
-            <span class="hide-mobile">Friends</span>
-          </a>
-        </li>
-        <li>
-          <a class="d-flex align-center fs-14 c-black rad-6 p-10" href="index.html">
-            <i class="fa-regular fa-file fa-fw"></i>
-            <span class="hide-mobile">Files</span>
-          </a>
-        </li>
-        <li>
-          <a class="d-flex align-center fs-14 c-black rad-6 p-10" href="index.html">
-            <i class="fa-regular fa-credit-card fa-fw"></i>
-            <span class="hide-mobile">Plans</span>
-          </a>
-        </li>
-      </ul>
+      <div class="sticky-element">
+        <h3 class="txt-c p-relative mt-0">Elzero</h3>
+        <ul class="p-0 list-none">
+          <li>
+            <a class="active d-flex align-center fs-14 c-black rad-6 p-10" href="index.html">
+              <i class="fa-regular fa-chart-bar fa-fw"></i>
+              <span class="hide-mobile">Dashboard</span>
+            </a>
+          </li>
+          <li>
+            <a class="d-flex align-center fs-14 c-black rad-6 p-10" href="index.html">
+              <i class="fa-solid fa-gear fa-fw"></i>
+              <span class="hide-mobile">Settings</span>
+            </a>
+          </li>
+          <li>
+            <a class="d-flex align-center fs-14 c-black rad-6 p-10" href="index.html">
+              <i class="fa-regular fa-user fa-fw"></i>
+              <span class="hide-mobile">Profile</span>
+            </a>
+          </li>
+          <li>
+            <a class="d-flex align-center fs-14 c-black rad-6 p-10" href="index.html">
+              <i class="fa-solid fa-diagram-project fa-fw"></i>
+              <span class="hide-mobile">Projects</span>
+            </a>
+          </li>
+          <li>
+            <a class="d-flex align-center fs-14 c-black rad-6 p-10" href="index.html">
+              <i class="fa-solid fa-graduation-cap fa-fw"></i>
+              <span class="hide-mobile">Courses</span>
+            </a>
+          </li>
+          <li>
+            <a class="d-flex align-center fs-14 c-black rad-6 p-10" href="index.html">
+              <i class="fa-regular fa-circle-user fa-fw"></i>
+              <span class="hide-mobile">Friends</span>
+            </a>
+          </li>
+          <li>
+            <a class="d-flex align-center fs-14 c-black rad-6 p-10" href="index.html">
+              <i class="fa-regular fa-file fa-fw"></i>
+              <span class="hide-mobile">Files</span>
+            </a>
+          </li>
+          <li>
+            <a class="d-flex align-center fs-14 c-black rad-6 p-10" href="index.html">
+              <i class="fa-regular fa-credit-card fa-fw"></i>
+              <span class="hide-mobile">Plans</span>
+            </a>
+          </li>
+        </ul>
+      </div>
     </div>
     <!-- Start Content -->
     <div class="content w-full">
@@ -364,15 +366,48 @@
     <div class="project-progress widget-shape p-relative">
       <h2 class="mt-0 mb-20">Last Project Progress</h2>
       <ul class="p-0 m-0">
-        <li class="d-flex align-center done"><span class="rad-c bg-white center-flex p-relative"></span>Got The Project</li>
-        <li class="mt-20 d-flex align-center done"><span class="rad-c bg-white center-flex p-relative"></span>Start The Project</li>
-        <li class="mt-20 d-flex align-center done"><span class="rad-c bg-white center-flex p-relative"></span>The Project About To Finish</li>
-        <li class="mt-20 d-flex align-center current"><span class="rad-c bg-white center-flex p-relative"></span>Test The Project</li>
-        <li class="mt-20 d-flex align-center"><span class="rad-c bg-white center-flex p-relative"></span>Finish The Project & Get Money</li>
+        <li class="d-flex align-center done"><span class="rad-half bg-white center-flex p-relative"></span>Got The Project</li>
+        <li class="mt-20 d-flex align-center done"><span class="rad-half bg-white center-flex p-relative"></span>Start The Project</li>
+        <li class="mt-20 d-flex align-center done"><span class="rad-half bg-white center-flex p-relative"></span>The Project About To Finish</li>
+        <li class="mt-20 d-flex align-center current"><span class="rad-half bg-white center-flex p-relative"></span>Test The Project</li>
+        <li class="mt-20 d-flex align-center"><span class="rad-half bg-white center-flex p-relative"></span>Finish The Project & Get Money</li>
       </ul>
       <img class="launch-icon hide-mobile" src="imgs/project.png" alt="rocket photo">
     </div>
     <!-- End Project Progress Widget -->
+    <!-- Start Reminders Widget -->
+    <div class="reminders widget-shape">
+      <h2 class="mt-0 mb-20">Reminders</h2>
+      <div class="row d-flex aling-center mb-15">
+        <div class="symbol mr-15 tasks"></div>
+        <div class="info">
+          <p class="fw-bold fs-14 mb-10 mt-5">Check My Tasks List</p>
+          <span class="c-grey fs-13 mb-5 d-block">28/09/2022 - 12:00am</span>
+        </div>
+      </div>
+      <div class="row d-flex aling-center mb-15">
+        <div class="symbol mr-15 projects"></div>
+        <div class="info">
+          <p class="fw-bold fs-14 mb-10 mt-5">Check My Projects</p>
+          <span class="c-grey fs-13 mb-5 d-block">26/10/2022 - 12:00am</span>
+        </div>
+      </div>
+      <div class="row d-flex aling-center mb-15">
+        <div class="symbol mr-15 clients"></div>
+        <div class="info">
+          <p class="fw-bold fs-14 mb-10 mt-5">Call All My Clients</p>
+          <span class="c-grey fs-13 mb-5 d-block">05/11/2022 - 12:00am</span>
+        </div>
+      </div>
+      <div class="row d-flex aling-center">
+        <div class="symbol mr-15 workshop"></div>
+        <div class="info">
+          <p class="fw-bold fs-14 mb-10 mt-5">Finish The Development Workshop</p>
+          <span class="c-grey fs-13 mb-5 d-block">20/12/2022 - 12:00am</span>
+        </div>
+      </div>
+    </div>
+    <!-- End Reminders Widget -->
     </div>
     <!-- End Wrapper -->
     </div>

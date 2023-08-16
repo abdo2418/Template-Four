@@ -60,25 +60,30 @@ a {
   width: 250px;
   box-shadow: 0 0 10px #ddd;
 }
-.sidebar > h3 {
+.sidebar .sticky-element {
+  height: fit-content;
+  position: sticky;
+  top: 20px;
+}
+.sidebar .sticky-element > h3 {
   padding-bottom: 20px;
   margin-bottom: 30px;
 }
 @media (min-width: 768px) {
-  .sidebar > h3::before,
-  .sidebar > h3::after {
+  .sidebar .sticky-element > h3::before,
+  .sidebar .sticky-element > h3::after {
     content: "";
     background-color: black;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
   }
-  .sidebar > h3::before {
+  .sidebar .sticky-element > h3::before {
     height: 2px;
     width: 80px;
     bottom: 0;
   }
-  .sidebar > h3::after {
+  .sidebar .sticky-element > h3::after {
     width: 12px;
     height: 12px;
     border-radius: 50%;
@@ -103,7 +108,7 @@ a {
     width: 58px;
     padding: 10px;
   }
-  .sidebar > h3 {
+  .sidebar .sticky-element > h3 {
     font-size: 13px;
     margin-bottom: 15px;
     padding-bottom: 0;
@@ -431,6 +436,46 @@ a {
   opacity: .1;
 }
 /* End Project Progress Widget */
+/* Start Reminders Widget */
+.reminders .row .symbol {
+  display: flex;
+  align-items: center;
+  border-right: 2px solid;
+}
+.reminders .row .symbol::after {
+  content: "";
+  width: 15px;
+  height: 15px;
+  margin-right: 15px;
+  border-radius: 50%;
+  position: relative;
+  right: 2px;
+}
+.reminders .row .tasks {
+  border-right-color: var(--blue-color);
+}
+.reminders .row .tasks::after {
+  background-color: var(--blue-color);
+}
+.reminders .row .projects {
+  border-right-color: var(--green-color);
+}
+.reminders .row .projects::after {
+  background-color: var(--green-color);
+}
+.reminders .row .clients {
+  border-right-color: var(--orange-color);
+}
+.reminders .row .clients::after {
+  background-color: var(--orange-color);
+}
+.reminders .row .workshop {
+  border-right-color: var(--red-color);
+}
+.reminders .row .workshop::after {
+  background-color: var(--red-color);
+}
+/* End Reminders Widget */
 /* End Content */
 /* Start Animation */
 @keyframes hide-seek {
