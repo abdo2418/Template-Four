@@ -194,7 +194,7 @@ a {
 }
 @media (max-width: 767px) {
   .wrapper {
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     gap: 10px;
     margin-right: 10px;
     margin-left: 10px;
@@ -476,6 +476,18 @@ a {
   background-color: var(--red-color);
 }
 /* End Reminders Widget */
+/* Start Post Widget */
+.post > div:not(:last-of-type) {
+  border-bottom: 1px solid #EEE;
+}
+.post .title img {
+  width: 48px;
+}
+.post .comment {
+  line-height: 1.8;
+  min-height: 140px;
+}
+/* End Post Widget */
 /* End Content */
 /* Start Animation */
 @keyframes hide-seek {
