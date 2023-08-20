@@ -541,6 +541,31 @@ a {
   color: #0077B5;
 }
 /* End Social Media Widget */
+/* Start Projects Table */
+.projects-table .responsive-table {
+  overflow-x: auto;
+}
+.projects-table table {
+  border-collapse: collapse;
+  min-width: 1000px;
+}
+.projects-table table td {
+  padding: 15px;
+  border: 1px solid #eee;
+  transition-duration: .3s;
+}
+.projects-table table tbody tr:hover td {
+  background-color: #faf7f7;
+}
+.projects-table table tbody td img {
+  border-radius: 50%;
+  width: 32px;
+  border: 2px solid white;
+}
+.projects-table table tbody td img:not(:first-of-type) {
+  margin-left: -20px;
+}
+/* End Projects Table */
 /* End Content */
 /* Start Animation */
 @keyframes hide-seek {
