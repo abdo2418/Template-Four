@@ -488,6 +488,59 @@ a {
   min-height: 140px;
 }
 /* End Post Widget */
+/* Start Social Media Widget */
+.social-media .stat {
+  flex-grow: 1;
+}
+.social-media .row .icon {
+  transition-duration: .3s;
+  width: 50px;
+  height: 55px;
+}
+.social-media .row .icon:hover {
+  transform: rotate(5deg);
+}
+.social-media .twitter {
+  background-color: hsla(203, 89%, 53%, 0.200);
+}
+.social-media .twitter .icon,
+.social-media .twitter a {
+  background-color: #1da1f2;
+}
+.social-media .twitter .stat {
+  color: #1da1f2;
+}
+.social-media .facebook {
+  background-color: hsla(214, 89%, 52%, 0.200);
+}
+.social-media .facebook .icon,
+.social-media .facebook a {
+  background-color: #1877f2;
+}
+.social-media .facebook .stat {
+  color: #1877f2;
+}
+.social-media .youtube {
+  background-color: hwb(0 0% 0% / 0.200);
+}
+.social-media .youtube .icon,
+.social-media .youtube a {
+  background-color: #ff0000;
+}
+.social-media .youtube .stat {
+  color: #ff0000;
+}
+.social-media .linkedin {
+  background-color: hsla(201, 100%, 35%, 0.200);
+}
+.social-media .linkedin .icon,
+.social-media .linkedin a {
+  background-color: #0077B5;
+}
+.social-media .linkedin .stat {
+  color: #0077B5;
+}
+/* End Social Media Widget */
 /* End Content */
 /* Start Animation */
 @keyframes hide-seek {

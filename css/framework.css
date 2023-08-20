@@ -26,12 +26,6 @@
 .gap-20 {
   gap: 20px;
 }
-.w-full {
-  width: 100%;
-}
-.w-fit {
-  width: fit-content;
-}
 .d-block {
   display: block;
 }
@@ -44,6 +38,17 @@
   }
 }
 /* End Box */
+/* Start Width And Height */
+.w-full {
+  width: 100%;
+}
+.w-fit {
+  width: fit-content;
+}
+.h-full {
+  height: 100%;
+}
+/* End Width And Height */
 /* Start Padding + Margin */
 .p-10 {
   padding: 10px;
@@ -74,6 +79,9 @@
 }
 .m-0 {
   margin: 0;
+}
+.m-15 {
+  margin: 15px;
 }
 .m-20 {
   margin: 20px;
@@ -113,6 +121,9 @@
 }
 .mb-20 {
   margin-bottom: 20px;
+}
+.mb-25 {
+  margin-bottom: 25px;
 }
 /* End Padding + Margin */
 /* Start Color  */
