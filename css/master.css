@@ -566,6 +566,68 @@ a {
   margin-left: -20px;
 }
 /* End Projects Table */
+/* Start Settings Page */
+@media (max-width: 767px) {
+  .settings-page {
+    margin-left: 10px;
+    margin-right: 10px;
+    gap: 10px;
+  }
+}
+/* Start Toggle */
+.toggle-checkbox {
+  -webkit-appearance: none;
+  appearance: none; 
+}
+.toggle-switch {
+  width: 78px;
+  height: 32px;
+  border-radius: 16px;
+  position: relative;
+  background-color: #CCC;
+  transition-duration: .3s;
+  cursor: pointer;
+}
+.toggle-switch::before {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  content: '\f00d';
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: white;
+  color: var(--grey-color);
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 5px;
+  transition-duration: .3s;
+}
+.toggle-checkbox:checked + .toggle-switch {
+  background-color: var(--blue-color);
+}
+.toggle-checkbox:checked + .toggle-switch::before {
+  content: '\f00c';
+  left: 48px;
+  color: var(--blue-color);
+}
+/* Ene Toggle */
+/* Start Site Control */
+.site-control textarea {
+  min-height: 150px;
+  resize: none;
+  border: 1px solid #ccc;
+}
+.site-control textarea::placeholder {
+  font-size: 12px;
+  color: var(--grey-color);
+  letter-spacing: 1px;
+} 
+/* End Site Control */
+/* End Settings Page */
 /* End Content */
 /* Start Animation */
 @keyframes hide-seek {

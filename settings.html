@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Font Awesome File -->
+  <link rel="stylesheet" href="css/all.min.css">
+  <!-- Normalize File -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <!-- The Created Framework File -->
+  <link rel="stylesheet" href="css/framework.css">
+  <!--The Main CSS Style File -->
+  <link rel="stylesheet" href="css/master.css">
+  <!-- Font File -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500&display=swap" rel="stylesheet">
+  <title>Settings</title>
+</head>
+<body>
+  <div class="page d-flex">
+    <div class="sidebar bg-white p-20 p-relative">
+      <div class="sticky-element">
+        <h3 class="txt-c p-relative mt-0">Elzero</h3>
+        <ul class="p-0 list-none">
+          <li>
+            <a class="d-flex align-center fs-14 c-black rad-6 p-10" href="index.html">
+              <i class="fa-regular fa-chart-bar fa-fw"></i>
+              <span class="hide-mobile">Dashboard</span>
+            </a>
+          </li>
+          <li>
+            <a class="active d-flex align-center fs-14 c-black rad-6 p-10" href="settings.html">
+              <i class="fa-solid fa-gear fa-fw"></i>
+              <span class="hide-mobile">Settings</span>
+            </a>
+          </li>
+          <li>
+            <a class="d-flex align-center fs-14 c-black rad-6 p-10" href="index.html">
+              <i class="fa-regular fa-user fa-fw"></i>
+              <span class="hide-mobile">Profile</span>
+            </a>
+          </li>
+          <li>
+            <a class="d-flex align-center fs-14 c-black rad-6 p-10" href="index.html">
+              <i class="fa-solid fa-diagram-project fa-fw"></i>
+              <span class="hide-mobile">Projects</span>
+            </a>
+          </li>
+          <li>
+            <a class="d-flex align-center fs-14 c-black rad-6 p-10" href="index.html">
+              <i class="fa-solid fa-graduation-cap fa-fw"></i>
+              <span class="hide-mobile">Courses</span>
+            </a>
+          </li>
+          <li>
+            <a class="d-flex align-center fs-14 c-black rad-6 p-10" href="index.html">
+              <i class="fa-regular fa-circle-user fa-fw"></i>
+              <span class="hide-mobile">Friends</span>
+            </a>
+          </li>
+          <li>
+            <a class="d-flex align-center fs-14 c-black rad-6 p-10" href="index.html">
+              <i class="fa-regular fa-file fa-fw"></i>
+              <span class="hide-mobile">Files</span>
+            </a>
+          </li>
+          <li>
+            <a class="d-flex align-center fs-14 c-black rad-6 p-10" href="index.html">
+              <i class="fa-regular fa-credit-card fa-fw"></i>
+              <span class="hide-mobile">Plans</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- Start Content -->
+    <div class="content w-full">
+      <!-- Start Head  -->
+      <div class="head bg-white p-15 between-flex">
+        <div class="search p-relative">
+          <input type="search" placeholder="Type A Keyword">
+        </div>
+        <div class="icons p-relative d-flex align-center">
+          <span class="notification p-relative">
+            <i class="fa-regular fa-bell fa-lg"></i>
+          </span>
+          <img src="imgs/avatar.png" alt="head photo">
+        </div>
+      </div>
+      <!-- End Head  -->
+      <!-- Start H1 Style  -->
+      <h1 class="p-relative">Settings</h1>
+      <!-- End H1 Style  -->
+      <!-- Start Settings Page -->
+      <div class="settings-page m-20 d-grid gap-20">
+      <!-- Start Site Control -->
+      <div class="site-control widget-shape">
+        <h2 class="mt-0 mb-15">Site Control</h2>
+        <p class="c-grey fs-15">Control The Website If There Is Maintenance</p>
+        <div class="between-flex">
+          <div>
+            <h3 class="fw-normal fs-16 mt-10 mb-10">Website Control</h3>
+            <p class="fs-13 c-grey m-0 mb-10">Open/Close Website And Type The Reason</p>
+          </div>
+          <div>
+            <label>
+              <input class="toggle-checkbox" type="checkbox" checked>
+              <div class="toggle-switch"></div>
+            </label>
+          </div>
+        </div>
+        <textarea class="d-block b-none w-full rad-6 mt-20 p-10" placeholder="Close Message Content"></textarea>
+      </div>
+      <!-- End Site Control -->
+      </div>
+      <!-- End Settings Page -->
+    </div>
+    <!-- End Content -->
+  </div>
+</body>
+</html>
