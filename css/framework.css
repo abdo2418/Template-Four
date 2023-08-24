@@ -216,6 +216,9 @@
 .b-none {
   border: none;
 }
+.b-ccc {
+  border: 1px solid #CCC;
+}
 /* End Border */
 /* Start Components */
 .center-flex {

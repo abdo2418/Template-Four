@@ -110,9 +110,163 @@
             </label>
           </div>
         </div>
-        <textarea class="d-block b-none w-full rad-6 mt-20 p-10" placeholder="Close Message Content"></textarea>
+        <textarea class="d-block b-none w-full rad-6 mt-20 p-10 b-ccc" placeholder="Close Message Content"></textarea>
       </div>
       <!-- End Site Control -->
+      <!-- Start General Info -->
+      <div class="general-info widget-shape">
+        <h2 class="mt-0 mb-15">General Info</h2>
+        <p class="c-grey fs-15">General Information About Your Account</p>
+        <form method="post">
+          <label for="f-name" class="fs-14 mb-5 d-block c-grey">First Name</label>
+          <input id="f-name" type="text" class="b-none d-block mb-15 w-full rad-6 p-10 b-ccc" placeholder="First Name">
+          <label for="l-name" class="fs-14 mb-5 d-block c-grey">Last Name</label>
+          <input id="l-name" type="text" class="b-none d-block mb-15 w-full rad-6 p-10 b-ccc" placeholder="Last Name">
+          <label class="fs-14 mb-5 d-block c-grey">Email</label>
+            <input type="email" class="b-none w-full rad-6 p-10 b-ccc" value="o@nn.sa" disabled>
+            <a href="#" class="c-blue">Change</a>
+        </form>
+      </div>
+      <!-- End General Info -->
+      <!-- Start Security Info -->
+      <div class="security-info widget-shape">
+        <h2 class="mt-0 mb-15">Security Info</h2>
+        <p class="c-grey fs-15 mb-20">Security Information About Your Account</p>
+        <div class="row">
+          <div class="between-flex">
+            <div class="info">
+              <h3 class="fs-16 mt-0 mb-5 fw-normal">Password</h3>
+              <span class="c-grey fs-13">Last Change On 25/10/2021</span>
+            </div>
+            <a href="#" class="bg-blue btn-shape c-white">Change</a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="between-flex">
+            <div class="info">
+              <h3 class="fs-16 mt-0 mb-5 fw-normal">Two-Factor Authentication</h3>
+              <span class="c-grey fs-13">Enable/Disable The Feature</span>
+            </div>
+            <label>
+              <input class="toggle-checkbox" type="checkbox" checked>
+              <div class="toggle-switch"></div>
+            </label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="between-flex">
+            <div class="info">
+              <h3 class="fs-16 mt-0 mb-5 fw-normal">Devices</h3>
+              <span class="c-grey fs-13">Check The Login Devices List</span>
+            </div>
+            <a href="#" class="bg-eee btn-shape c-black">Devices</a>
+          </div>
+        </div>
+      </div>
+      <!-- End Security Info -->
+      <!-- Start Social Info -->
+      <div class="social-info widget-shape">
+        <h2 class="mt-0 mb-15">Social Info</h2>
+        <p class="c-grey fs-15 mb-20">Social Media Information</p>
+        <div class="social-box d-flex rad-6 mb-15">
+          <div class="icon center-flex">
+            <i class="fa-brands fa-twitter c-grey"></i>
+          </div>
+          <input class="p-10 b-none" type="text" placeholder="Twitter Username">
+        </div>
+        <div class="social-box d-flex rad-6 mb-15">
+          <div class="icon center-flex">
+            <i class="fa-brands fa-facebook-f c-grey"></i>
+          </div>
+          <input class="p-10 b-none" type="text" placeholder="Facebook Username">
+        </div>
+        <div class="social-box d-flex rad-6 mb-15">
+          <div class="icon center-flex">
+            <i class="fa-brands fa-linkedin c-grey"></i>
+          </div>
+          <input class="p-10 b-none" type="text" placeholder="Linkedin Username">
+        </div>
+        <div class="social-box d-flex rad-6">
+          <div class="icon center-flex">
+            <i class="fa-brands fa-youtube c-grey"></i>
+          </div>
+          <input class="p-10 b-none" type="text" placeholder="Youtube Username">
+        </div>
+      </div>
+      <!-- End Social Info -->
+      <!-- Start Widgets Control -->
+      <div class="widgets-control widget-shape">
+        <h2 class="mt-0 mb-15">Widgets Control</h2>
+        <p class="c-grey fs-15 mb-20">Show/Hide Widgets</p>
+        <div class="box d-flex align-center mb-15">
+          <input id="qu" type="checkbox" checked>
+          <label for="qu"><div class="shape center-flex"></div>Quick Draft</label>
+        </div>
+        <div class="box d-flex align-center mb-15">
+          <input id="ye" type="checkbox" checked>
+          <label for="ye"><div class="shape center-flex"></div>Yearly Targets</label>
+        </div>
+        <div class="box d-flex align-center mb-15">
+          <input id="ti" type="checkbox" checked>
+          <label for="ti"><div class="shape center-flex"></div>Tickets Statistics</label>
+        </div>
+        <div class="box d-flex align-center mb-15">
+          <input id="ne" type="checkbox" checked>
+          <label for="ne"><div class="shape center-flex"></div>Latest News</label>
+        </div>
+        <div class="box d-flex align-center mb-15">
+          <input id="ta" type="checkbox">
+          <label for="ta"><div class="shape center-flex"></div>Latest Tasks</label>
+        </div>
+        <div class="box d-flex align-center">
+          <input id="tsi" type="checkbox" checked>
+          <label for="tsi"><div class="shape center-flex"></div>Top Search Items</label>
+        </div>
+      </div>
+      <!-- End Widgets Control -->
+      <!-- Start Backup Manager -->
+      <div class="backup-manager widget-shape">
+        <h2 class="mt-0 mb-15">Backup Manager</h2>
+        <p class="c-grey fs-15 mb-20">Control Backup Time And Location</p>
+        <div class="f-chose">
+          <div class="f-box mb-15 d-flex align-center">
+            <input type="radio" name="first-chose" id="daily" checked>
+            <label class="d-flex align-center" for="daily"><div class="shape center-flex rad-half"></div>Daily</label>
+          </div>
+          <div class="f-box mb-15 d-flex align-center">
+            <input type="radio" name="first-chose" id="weekly">
+            <label class="d-flex align-center" for="weekly"><div class="shape center-flex rad-half"></div>Weakly</label>
+          </div>
+          <div class="f-box mb-15 d-flex align-center">
+            <input type="radio" name="first-chose" id="monthly">
+            <label class="d-flex align-center" for="monthly"><div class="shape center-flex rad-half"></div>Monthly</label>
+          </div>
+        </div>
+        <div class="s-chose d-flex align-center space-between txt-c block-mobile">
+          <input type="radio" name="second-chose" id="megaman">
+          <div class="s-box rad-10">
+            <label for="megaman">
+              <i class="fa-solid fa-server d-block mb-10"></i>
+              Megaman
+            </label>
+          </div>
+          <input type="radio" name="second-chose" id="zero" checked>
+          <div class="s-box rad-10">
+            <label for="zero">
+              <i class="fa-solid fa-server d-block mb-10"></i>
+              Zero
+            </label>
+          </div>
+          <input type="radio" name="second-chose" id="sigma">
+          <div class="s-box rad-10">
+            <label for="sigma">
+              <i class="fa-solid fa-server d-block mb-10"></i>
+              Sigma
+            </label>
+          </div>
+        </div>
+      </div>
+      <!-- End Backup Manager -->
       </div>
       <!-- End Settings Page -->
     </div>

@@ -567,8 +567,12 @@ a {
 }
 /* End Projects Table */
 /* Start Settings Page */
+.settings-page {
+  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+}
 @media (max-width: 767px) {
   .settings-page {
+    grid-template-columns: minmax(100px,1fr);
     margin-left: 10px;
     margin-right: 10px;
     gap: 10px;
@@ -578,6 +582,7 @@ a {
 .toggle-checkbox {
   -webkit-appearance: none;
   appearance: none; 
+  display: none;
 }
 .toggle-switch {
   width: 78px;
@@ -593,8 +598,8 @@ a {
   align-items: center;
   justify-content: center;
   content: '\f00d';
-  width: 25px;
-  height: 25px;
+  width: 24px;
+  height: 24px;
   border-radius: 50%;
   background-color: white;
   color: var(--grey-color);
@@ -603,7 +608,7 @@ a {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  left: 5px;
+  left: 4px;
   transition-duration: .3s;
 }
 .toggle-checkbox:checked + .toggle-switch {
@@ -611,15 +616,21 @@ a {
 }
 .toggle-checkbox:checked + .toggle-switch::before {
   content: '\f00c';
-  left: 48px;
+  left: 50px;
   color: var(--blue-color);
 }
 /* Ene Toggle */
+/* STart Disabled */
+.settings-page :disabled {
+  background-color: #f1f5f9;
+  color: #bbb;
+  cursor: no-drop;
+}
+/* End Disabled */
 /* Start Site Control */
 .site-control textarea {
   min-height: 150px;
   resize: none;
-  border: 1px solid #ccc;
 }
 .site-control textarea::placeholder {
   font-size: 12px;
@@ -627,6 +638,152 @@ a {
   letter-spacing: 1px;
 } 
 /* End Site Control */
+/* Start General Info */
+.general-info form input[type="text"]::placeholder {
+  font-size: 14px;
+}
+.general-info form input[type="email"] {
+  display: inline-flex;
+  width: calc(100% - 80px);
+  margin-right: 10px;
+  font-size: 13px;
+}
+/* End General Info */
+/* Start Security Info */
+.security-info .row:first-of-type div > a {
+  transition-duration: .3s;
+}
+.security-info .row:first-of-type div > a:hover {
+  background-color: var(--blue-alt-color);
+}
+.security-info .row:not(:last-of-type) {
+  border-bottom: 1px solid #eee;
+  margin-bottom: 15px;
+  padding-bottom: 25px;
+}
+/* End Security Info */
+/* Start Social Info */
+.social-info .social-box {
+  overflow: hidden;
+  border: 1px solid #ddd;
+}
+.social-info .social-box .icon {
+  border-right: 1px solid #ddd;
+  background-color: #f6f6f6;
+  width: 40px;
+  height: 40px;
+}
+.social-info .social-box .icon i {
+  transition-duration: .3s;
+}
+.social-info .social-box input {
+  flex-grow: 1;
+  background-color: #f6f6f6;
+}
+.social-info .social-box input::placeholder {
+  font-size: 14px;
+}
+.social-info .social-box:focus-within .icon i {
+  color: black;
+}
+/* End Social Info */
+/* Start Widgets Control */
+.widgets-control .box input {
+  -webkit-appearance: none;
+  appearance: none;
+}
+.widgets-control .box .shape {
+  display: inline-flex;
+  width: 17px;
+  height: 17px;
+  border-radius: 3px;
+  border: 2px solid var(--grey-color);
+  margin-right: 10px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+.widgets-control .box:hover .shape {
+  border-color: var(--blue-color);
+}
+.widgets-control .box .shape::before {
+  content: '\f00c';
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  color: white;
+  font-size: 13px;
+  width: 100%;
+  height: 100%;
+  background-color: var(--blue-color);
+  transition-duration: .3s;
+  transform: scale(0) rotate(1turn);
+}
+.widgets-control .box label {
+  cursor: pointer;
+}
+.widgets-control .box input:checked + label .shape {
+  border-color: var(--blue-color);
+}
+.widgets-control .box input:checked + label .shape::before {
+  transform: scale(1) rotate(0turn);
+}
+/* End Widgets Control */
+/* Start Backup Manager */
+.backup-manager .f-chose {
+  padding-bottom: 5px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #eee;
+}
+.backup-manager input {
+  -webkit-appearance: none;
+  appearance: none;
+}
+.backup-manager label {
+  cursor: pointer;
+}
+.backup-manager .f-chose .f-box .shape {
+  display: inline-flex;
+  border: 2px solid var(--grey-color);
+  width: 22px;
+  height: 22px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+.backup-manager .f-chose .f-box:hover .shape {
+  border-color: var(--blue-color);
+}
+.backup-manager .f-chose .f-box .shape::before {
+  content: '';
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: var(--blue-color);
+  position: relative;
+  transition-duration: .3s;
+  transform: scale(0);
+}
+.backup-manager .f-chose .f-box input:checked + label .shape {
+  border-color: var(--blue-color);
+}
+.backup-manager .f-chose .f-box input:checked + label .shape::before {
+  transform: scale(1);
+}
+.backup-manager .s-chose .s-box {
+  border: 2px solid #EEE;
+  flex-grow: 1;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+.backup-manager .s-chose .s-box label {
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 15px;
+}
+.backup-manager .s-chose input:checked + .s-box {
+  border-color: var(--blue-color);
+  color: var(--blue-color);
+} 
+/* End Backup Manager */
 /* End Settings Page */
 /* End Content */
 /* Start Animation */
