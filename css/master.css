@@ -620,6 +620,55 @@ a {
   color: var(--blue-color);
 }
 /* Ene Toggle */
+/* Start Small Toggle */
+.small-toggle-checkbox {
+  -webkit-appearance: none;
+  appearance: none; 
+  display: none;
+}
+.small-toggle-switch {
+  width: 78px;
+  height: 20px;
+  border-radius: 16px;
+  position: relative;
+  background-color: #CCC;
+  transition-duration: .3s;
+  cursor: pointer;
+}
+.small-toggle-switch::before {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  content: '\f00d';
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: white;
+  color: var(--grey-color);
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  font-size: 10px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 5px;
+  transition-duration: .3s;
+}
+.small-toggle-checkbox:checked + .small-toggle-switch {
+  background-color: var(--blue-color);
+}
+.small-toggle-checkbox:checked + .small-toggle-switch::before {
+  content: '\f00c';
+  left: 61px;
+  color: var(--blue-color);
+}
+@media (max-width: 767px) {
+  .small-toggle-switch {
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+/* End Small Toggle */
 /* STart Disabled */
 .settings-page :disabled {
   background-color: #f1f5f9;
@@ -785,6 +834,103 @@ a {
 } 
 /* End Backup Manager */
 /* End Settings Page */
+/* Start Profile Page */
+/* Start OverView */
+@media (max-width: 767px) {
+  .overview {
+    flex-direction: column;
+  }
+}
+.overview .avatar {
+  width: 300px;
+}
+.overview .avatar > img {
+  width: 120px;
+}
+.overview .progress {
+  width: 70%;
+  height: 6px;
+  border-radius: 10px;
+  background-color: #EEE;
+  margin: 15px auto 0;
+}
+.overview .rating {
+  justify-content: center;
+}
+.overview .rating li {
+  color: var(--orange-color);
+  font-size: 13px;
+  margin-right: 5px;
+}
+@media (min-width: 768px) {
+  .overview .info {
+    border-left: 1px solid #eee;
+  }
+}
+.overview .info {
+  flex-shrink: 2;
+}
+.overview .info .row {
+  flex-wrap: wrap;
+  transition-duration: .3s;
+}
+.overview .info .row:not(:last-of-type) {
+  border-bottom: 1px solid #eee;
+}
+.overview .info .row:hover {
+  background-color: #f9f9f9;
+}
+.overview .info .row .item {
+  display: inline-block;
+  min-width: 250px;
+  padding-top: 10px;
+}
+/* End OverView */
+/* Start Other Data */
+@media (max-width: 767px) {
+  .profile-page .other-data,
+  .other-data .activities .box {
+    flex-direction: column;
+  }
+  .other-data .activities .box > div {
+    margin-top: 15px;
+  }
+}
+.other-data .skills .box:not(:last-of-type),
+.other-data .activities .box:not(:last-of-type) {
+  border-bottom: 1px solid #eee;
+}
+.other-data .skills .box span {
+  display: inline-block;
+  margin-top: 15px;
+}
+.other-data .skills {
+  flex-grow: 1;
+}
+.other-data .activities {
+  flex-grow: 2;
+}
+.other-data .activities .box span {
+  display: inline-block;
+  margin-bottom: 15px;
+}
+.other-data .activities .box img {
+  width: 64px;
+  height: 64px;
+}
+.other-data .activities .box .info {
+  flex-grow: 1;
+}
+@media (min-width: 768px) {
+  .other-data .activities .box img {
+    margin-right: 10px;
+  }
+  .other-data .activities .box .time {
+    text-align: right;
+  }  
+}
+/* End Other Data */
+/* End Profile Page */
 /* End Content */
 /* Start Animation */
 @keyframes hide-seek {
