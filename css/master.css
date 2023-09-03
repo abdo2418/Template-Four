@@ -1025,6 +1025,53 @@ a {
   transform: translateX(-50%);
 }
 /* End Courses Page */
+/* Start Friends Page */
+.friends-page {
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+@media (max-width: 767px) {
+  .friends-page {
+    grid-template-columns: minmax(200px, 1fr);
+    margin-right: 10px;
+    margin-left: 10px;
+    gap: 10px;
+  }
+}
+.friends-page .friend-box .contact {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+.friends-page .friend-box .contact i {
+  cursor: pointer;
+  transition-duration: .3s;
+  color: #666;
+}
+.friends-page .friend-box .contact i:hover {
+  background-color: var(--blue-color);
+  color: white;
+}
+.friends-page .friend-box .state {
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+}
+.friends-page .friend-box .state > span:not(:first-of-type):not(.vip) {
+  margin-top: 15px;
+}
+.friends-page .friend-box .state > span i {
+  margin-right: 5px;
+}
+.friends-page .friend-box .state span.vip {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  color: var(--orange-color);
+  font-weight: bold;
+  font-size: 40px;
+  opacity: .2;
+}
+/* End Friends Page */
 /* End Content */
 /* Start Animation */
 @keyframes hide-seek {
