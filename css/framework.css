@@ -122,6 +122,9 @@
 .mt-25 {
   margin-top: 25px;
 }
+.mr-5 {
+  margin-right: 5px;
+}
 .mr-10 {
   margin-right: 10px;
 }
@@ -191,6 +194,9 @@
 /* Start Position */
 .p-relative {
   position: relative;
+}
+.p-absolute {
+  position: absolute;
 }
 /* End Position */
 /* Start Font */
@@ -272,3 +278,6 @@
   border-radius: 10px;
 }
 /* End Components  */
+.cur-p {
+  cursor: pointer;
+}

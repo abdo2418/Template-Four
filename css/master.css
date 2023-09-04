@@ -1136,6 +1136,74 @@ a {
   animation: up .8s infinite;
 }
 /* End Files Page */
+/* Start Plans Page */
+.plans-page {
+  grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+}
+@media (max-width: 767px) {
+  .plans-page {
+    grid-template-columns: minmax(250px, 1fr);
+    gap: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+.plans-page .plan-box .title {
+  border: 3px solid white;
+}
+.plans-page .plan-box .title.green {
+  outline: 3px solid var(--green-color);
+}
+.plans-page .plan-box .title.blue {
+  outline: 3px solid var(--blue-color);
+}
+.plans-page .plan-box .title.orange {
+  outline: 3px solid var(--orange-color);
+}
+.plans-page .plan-box .title .price {
+  font-size: 40px;
+}
+.plans-page .plan-box .title .price i {
+  font-size: 20px;
+  left: -20px;
+  top: 10px;
+}
+.plans-page .plan-box .features li {
+  border-bottom: 1px solid #eee;
+}
+.plans-page .plan-box .features li span.text {
+  flex-grow: 1;
+}
+.plans-page .plan-box .features .tool-tep::before,
+.plans-page .plan-box .features .tool-tep::after {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: none;
+}
+.plans-page .plan-box .features .tool-tep::before {
+  content: '';
+  border: 10px solid;
+  border-color: #666 transparent transparent ;
+  bottom: 50%;
+}
+.plans-page .plan-box .features .tool-tep::after {
+  content: "Note";
+  color: white;
+  background-color: #666;
+  bottom: calc(100% + 10px) ;
+  padding: 5px;
+  font-size: 13px;
+}
+.plans-page .plan-box .features .tool-tep:hover::before,
+.plans-page .plan-box .features .tool-tep:hover::after {
+  display: block;
+}
+.plans-page .plan-box a.join {
+  padding: 8px 15px;
+}
+
+/* End Plans Page */
 /* End Content */
 /* Start Animation */
 @keyframes hide-seek {
